@@ -7,7 +7,8 @@ using System.Text;
 
 namespace GuniKitchen.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext 
+        : IdentityDbContext<MyIdentityUser,MyIdentityRole,Guid>
     {
         public DbSet<Product> Products { get; set; }
         public DbSet<Cart> Carts { get; set; }

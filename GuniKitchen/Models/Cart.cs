@@ -24,7 +24,7 @@ namespace GuniKitchen.Models
 
         [Display(Name = "User Id")]
             [Required]
-            public short User_Id { get; set; }
+            public int User_Id { get; set; }
 
 
         /// <summary>

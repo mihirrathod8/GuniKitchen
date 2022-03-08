@@ -29,7 +29,7 @@ namespace GuniKitchen.Models
             [Display(Name = "Price per unit")]
             [Required]
             [Range(0.0, 500.00, ErrorMessage = "{0} has to be between Rs. {1} and Rs. {2}")]
-            public decimal Product_Price { get; set; }
+            public int Product_Price { get; set; }
 
 
             [Required]
@@ -51,7 +51,7 @@ namespace GuniKitchen.Models
 
             [Display(Name = "Product Image")]
             [NotMapped]
-            public IFormFile Product_Image { get; set; }
+            public string Product_Image { get; set; }
 
         [Required]
         [MinLength(3, ErrorMessage = "{0} should have a minimum of {1} characters")]
